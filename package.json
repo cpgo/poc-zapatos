@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "zapatos": "dotenv zapatos"
+    "zapatos": "dotenv zapatos",
+    "start": "tsc && dotenv node dist/src/main.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/pg": "^7.14.4",
+    "typescript": "^3.9.7",
     "zapatos": "^0.1.54"
   },
   "dependencies": {
