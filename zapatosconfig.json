@@ -8,7 +8,8 @@
   "warningListener": true,
   "schemas": {
     "public": {
-      "include": "*"
+      "include": "*",
+      "exclude": []
     }
   }
 }

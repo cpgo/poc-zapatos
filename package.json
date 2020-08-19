@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "zapatos": "dotenv zapatos"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "zapatos": "^0.1.54"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "dotenv-cli": "^3.2.0",
+    "pg": "^8.3.2"
   }
 }
