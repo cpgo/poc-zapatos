@@ -4,19 +4,17 @@ import pool from './pgPool'
 
 
 const allUsers = async () => {
+  const a = await db.sql<s.users.SQL, s.users.Selectable[]> ``
   return await db.sql<s.users.SQL, s.users.Selectable[]>
     `select * from ${"users"}`
     .run(pool)
 }
 
 const insertUser = async (params: s.users.Insertable) => {
-  const user = {
-    name: params.name
-  }
   return db.sql<s.users.SQL, s.users.Selectable[]>
   `
-    INSERT INTO ${"users"} (${db.cols(user)})
-    VALUES (${db.vals(user)}) RETURNING *
+    INSERT INTO ${"users"} (${db.cols(params)})
+    VALUES (${db.vals(params)}) RETURNING *
   `.run(pool)
 }
 

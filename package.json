@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prestart": "./dbmate up && dotenv zapatos",
     "zapatos": "dotenv zapatos",
     "start": "tsc && dotenv node dist/src/main.js"
   },
