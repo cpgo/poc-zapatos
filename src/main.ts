@@ -4,7 +4,6 @@ import pool from './pgPool'
 
 
 const allUsers = async () => {
-  const a = await db.sql<s.users.SQL, s.users.Selectable[]> ``
   return await db.sql<s.users.SQL, s.users.Selectable[]>
     `select * from ${"users"}`
     .run(pool)
