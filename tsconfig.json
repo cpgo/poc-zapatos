@@ -1,20 +1,17 @@
 {
   "compilerOptions": {
-    "allowUnreachableCode": false,
-    "alwaysStrict": true,
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "target": "es2019",
     "module": "CommonJS",
-    "moduleResolution": "node",
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
     "strict": true,
-    "strictNullChecks": true,
-    "esModuleInterop": true,
-    "allowJs": true,
-    "target": "es2017",
-    "rootDir": "./",
-    "outDir": "dist",
-    "sourceMap": true
+    "declaration": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "paths": {
+      "*": [
+        "typings/*"
+      ]
+    }
   }
 }

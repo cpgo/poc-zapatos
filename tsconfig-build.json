@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/zapatos/schema.d.ts"
+  ]
+}
