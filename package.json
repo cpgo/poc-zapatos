@@ -6,7 +6,8 @@
   "scripts": {
     "prestart": "./dbmate up && dotenv zapatos",
     "zapatos": "dotenv zapatos",
-    "start": "tsc --project tsconfig-build.json && dotenv node dist/src/main.js"
+    "tsc": "tsc --project tsconfig.json",
+    "start": "tsc --project tsconfig.json && dotenv node dist/main.js"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,6 @@
     "dotenv": "^8.2.0",
     "dotenv-cli": "^3.2.0",
     "pg": "^8.5.1",
-    "zapatos": "3.3.0"
+    "zapatos": "3.4.0"
   }
 }
